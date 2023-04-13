@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fireauth/static/css/main.9f459bf5.css",
+    "main.js": "/fireauth/static/js/main.75751266.js",
+    "static/js/787.a3eca5c8.chunk.js": "/fireauth/static/js/787.a3eca5c8.chunk.js",
+    "index.html": "/fireauth/index.html",
+    "main.9f459bf5.css.map": "/fireauth/static/css/main.9f459bf5.css.map",
+    "main.75751266.js.map": "/fireauth/static/js/main.75751266.js.map",
+    "787.a3eca5c8.chunk.js.map": "/fireauth/static/js/787.a3eca5c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f459bf5.css",
+    "static/js/main.75751266.js"
+  ]
+}
