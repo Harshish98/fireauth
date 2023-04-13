@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { auth } from './firebase'
@@ -17,7 +17,13 @@ const handleSubmit = () =>{
       navigate('/login')
     console.log(res)
     })
-    .catch((err)=>console.log(err))
+    .catch((err)=>alert(err.message))
+}
+
+const handleGoogle = () => {
+  const googleAuthProvider = new GoogleAuthProvider();
+  signInWithPopup(auth, googleAuthProvider).then((res)=>navigate('/home'))
+  .catch((err)=>alert(err.message))
 }
 
   return (
@@ -28,6 +34,8 @@ const handleSubmit = () =>{
         <button onClick={handleSubmit}>Submit</button>
         <p>Already have an account ?         <Link to="/login"><span>Login</span></Link>
 </p>
+<hr/>
+<button onClick={handleGoogle}>Sign in Goggle</button>
         </div>
     </div>
   )

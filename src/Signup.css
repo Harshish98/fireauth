@@ -26,3 +26,6 @@
     border: none;
     cursor: pointer;
 }
+.signup-wrapper > hr{
+    margin: 1rem 0;
+}
