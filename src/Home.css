@@ -1,0 +1,15 @@
+.hello-wrapper{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hello-box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
